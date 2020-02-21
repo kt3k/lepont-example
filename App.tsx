@@ -17,7 +17,10 @@ import { WebView } from 'react-native-webview';
 
 const App = () => {
   const registry = useRegistry()
-  useBridge(registry, 'foo', async () => {
+  useBridge(registry, 'foo', async (payload, bridge) => {
+    setInterval(() => {
+      bridge.sendMessage({ type: 'bar', payload })
+    }, 1000)
     console.log('foo')
     return 43
   })
