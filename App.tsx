@@ -13,14 +13,19 @@ import {
   StatusBar,
 } from 'react-native';
 import { useRegistry, useBridge } from 'lepont';
+import { WebView } from 'react-native-webview';
 
 const App = () => {
   const registry = useRegistry()
-  useBridge(registry, 'my-api', async () => {
+  useBridge(registry, 'foo', async () => {
+    console.log('foo')
+    return 43
   })
   return (
     <WebView
-      source={{ uri: 'https://google.com' }}
+      javaScriptEnabled
+      source={{ uri: 'Web.bundle/loader.html' }}
+      originWhitelist={['*']}
       ref={registry.ref}
       onMessage={registry.onMessage}
     />

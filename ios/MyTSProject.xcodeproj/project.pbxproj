@@ -13,6 +13,7 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19C9E56423FFEEE200AB06DB /* Web.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 19C9E56323FFEEE200AB06DB /* Web.bundle */; };
 		2837BDF8BF5222FB7C349B5E /* libPods-MyTSProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E56CD41A5D5BDB64CC5C5C79 /* libPods-MyTSProjectTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -51,6 +52,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MyTSProject/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MyTSProject/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MyTSProject/main.m; sourceTree = "<group>"; };
+		19C9E56323FFEEE200AB06DB /* Web.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Web.bundle; path = ../html/Web.bundle; sourceTree = "<group>"; };
 		1EAE792AF6BA7D907A839FDA /* Pods-MyTSProject-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTSProject-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MyTSProject-tvOS/Pods-MyTSProject-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* MyTSProject-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyTSProject-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* MyTSProject-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyTSProject-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* MyTSProject */ = {
 			isa = PBXGroup;
 			children = (
+				19C9E56323FFEEE200AB06DB /* Web.bundle */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -194,7 +197,6 @@
 				734013DD79BB2ACB27229D64 /* Pods-MyTSProjectTests.debug.xcconfig */,
 				643846DACB556311CABB60D1 /* Pods-MyTSProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +310,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C9E56423FFEEE200AB06DB /* Web.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);

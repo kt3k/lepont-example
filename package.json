@@ -2,12 +2,15 @@
   "name": "MyTSProject",
   "version": "0.0.1",
   "private": true,
+  "main": "./html/Web.bundle/script.js",
   "scripts": {
     "start": "react-native start",
+    "bt": "npm run build && npx react-native run-ios",
+    "build": "parcel build script.ts && cp dist/script.js html/Web.bundle/script.js",
     "test": "jest"
   },
   "dependencies": {
-    "lepont": "^0.2.0",
+    "lepont": "^0.5.3",
     "react": "16.8.6",
     "react-native": "0.60.5",
     "react-native-webview": "^8.1.1"
@@ -23,6 +26,7 @@
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "0.54.1",
+    "parcel-bundler": "^1.12.4",
     "react-test-renderer": "16.8.6",
     "typescript": "^3.6.3"
   },
