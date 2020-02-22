@@ -15,6 +15,8 @@ import {
 import { useRegistry, useBridge } from 'lepont';
 import { WebView } from 'react-native-webview';
 
+const webBundlePrefix = Platform.OS === 'android' ? 'file:///android_asset/' : ''
+
 const App = () => {
   const registry = useRegistry()
   useBridge(registry, 'foo', async (payload, bridge) => {
@@ -27,7 +29,7 @@ const App = () => {
   return (
     <WebView
       javaScriptEnabled
-      source={{ uri: 'Web.bundle/loader.html' }}
+      source={{ uri: `${webBundlePrefix}Web.bundle/loader.html` }}
       originWhitelist={['*']}
       ref={registry.ref}
       onMessage={registry.onMessage}

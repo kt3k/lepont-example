@@ -5,7 +5,8 @@
   "main": "./html/Web.bundle/script.js",
   "scripts": {
     "start": "react-native start",
-    "bt": "npm run build && npx react-native run-ios",
+    "bi": "npm run build && npx react-native run-ios",
+    "ba": "npm run build && npx react-native run-android",
     "build": "parcel build script.ts && cp dist/script.js html/Web.bundle/script.js",
     "test": "jest"
   },

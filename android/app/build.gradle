@@ -185,6 +185,10 @@ android {
         pickFirst '**/x86/libjsc.so'
         pickFirst '**/armeabi-v7a/libjsc.so'
     }
+
+    sourceSets {
+      main { assets.srcDirs = ['src/main/assets', '../../html'] }
+    }
 }
 
 dependencies {

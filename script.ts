@@ -4,9 +4,8 @@ async function main() {
   try {
     const res = await sendMessage({
       type: 'foo',
-      payload: {abc: 123}
+      payload: { "Hello, world!": "through LePont bridge" }
     })
-    alert(`res=${res}`)
   } catch (e) {
     alert(e)
   }
