@@ -1,0 +1,4 @@
+describe('script', () => {
+  it('pass', () => {
+  })
+})
