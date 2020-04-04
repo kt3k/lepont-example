@@ -4843,10 +4843,10 @@ left-pad@^1.3.0:
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
-lepont@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/lepont/-/lepont-0.5.3.tgz#b21e2af55bbc0be2aeb76c859cff59f3e93ba367"
-  integrity sha512-1qeOsRr5JHp9LycBV3XYU6mN72QKs/vXsUYYj3HSbiDIRU4xM8D4S1IoH6e3HrUmcbJ+Uk19Ly99BPykanMCeA==
+lepont@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/lepont/-/lepont-0.10.1.tgz#1854cb1c6c1dec059763f41d0888a24098e52e31"
+  integrity sha512-+BU/uqhNTIREw3b+iA9ra3dWD39nfNHQpRUOnfIMCfOVhQpI0jTHqXR8apz6anTnXVAyLs39go0Rz4ZtA/OxTQ==
 
 leven@^3.1.0:
   version "3.1.0"
