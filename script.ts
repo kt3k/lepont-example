@@ -1,6 +1,7 @@
 import { sendMessage, on } from 'lepont/browser'
 
-async function main() {
+async function sendFoo() {
+  addMessage('Hello!')
   try {
     const res = await sendMessage({
       type: 'foo',
@@ -9,13 +10,26 @@ async function main() {
   } catch (e) {
     alert(e)
   }
+}
 
+function addMessage(msg) {
+  const div = document.createElement('div')
+  div.textContent = msg
+  document.body.appendChild(div)
 }
 
 on('bar', (p) => {
-  const div = document.createElement('div')
-  div.textContent = JSON.stringify(p)
-  document.body.appendChild(div)
+  addMessage(JSON.stringify(p))
 })
+
+const qs = (q) => document.querySelector(q)
+
+async function initEvents() {
+  qs('.inf-btn').addEventListener('click', sendFoo)
+}
+
+async function main() {
+  initEvents()
+}
 
 setTimeout(main, 500)
